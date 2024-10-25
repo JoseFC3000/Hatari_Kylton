@@ -1057,8 +1057,8 @@ bool Opt_ParseParameters(int argc, const char * const argv[])
 			ConfigureParams.Screen.nMaxHeight = NUM_VISIBLE_LINES;
 			if (zoom > 1)
 			{
-				ConfigureParams.Screen.nMaxWidth *= 2;
-				ConfigureParams.Screen.nMaxHeight *= 2;
+				ConfigureParams.Screen.nMaxWidth *= 1;
+				ConfigureParams.Screen.nMaxHeight *= 1;
 			}
 			ConfigureParams.Screen.nMaxHeight += STATUSBAR_MAX_HEIGHT;
 			break;
