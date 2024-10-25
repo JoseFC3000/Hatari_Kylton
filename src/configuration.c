@@ -571,8 +571,8 @@ void Configuration_SetDefault(void)
 	ConfigureParams.Screen.bShowDriveLed = true;
 	ConfigureParams.Screen.bCrop = false;
 	/* gives zoomed Falcon/TT windows about same size as ST/STE windows */
-	ConfigureParams.Screen.nMaxWidth = 1*NUM_VISIBLE_LINE_PIXELS;
-	ConfigureParams.Screen.nMaxHeight = 1*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT;
+	ConfigureParams.Screen.nMaxWidth = 2*NUM_VISIBLE_LINE_PIXELS;
+	ConfigureParams.Screen.nMaxHeight = 2*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT;
 	ConfigureParams.Screen.bForceMax = false;
 
 	/* Set defaults for Sound */
