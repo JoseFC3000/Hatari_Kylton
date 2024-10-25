@@ -773,8 +773,8 @@ static void update_variables(void)
    //        hatari_borders = true;
    //        break;
    //    case HATARI_VIDEO_CR_LO:
-   //        retrow = 366;
-   //        retroh = 243;
+   //        retrow = 320;
+   //        retroh = 200;
    //        // Strange, do not work if set to false...  double image
    //        hatari_borders = false;
    //        break;
