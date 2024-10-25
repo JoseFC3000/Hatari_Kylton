@@ -854,9 +854,9 @@ class HatariConfigMapping(ConfigStore):
         # zoom?
         maxw, maxh = self.get_max_size()
         if 2*width <= maxw and 2*height <= maxh:
-            width *= 1
-            height *= 1
-            zoom = 1
+            width *= 2
+            height *= 2
+            zoom = 2
         else:
             zoom = 1
         # overscan borders?
