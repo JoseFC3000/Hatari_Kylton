@@ -42,8 +42,8 @@ void Resolution_Init(void)
 	else
 	{
 		fprintf(stderr, "SDL_GetDesktopDisplayMode failed: %s", SDL_GetError());
-		DesktopWidth = 2*NUM_VISIBLE_LINE_PIXELS;
-		DesktopHeight = 2*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT;
+		DesktopWidth = 1*NUM_VISIBLE_LINE_PIXELS;
+		DesktopHeight = 1*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT;
 	}
 #else
 	/* Needs to be called after SDL video and configuration
@@ -56,8 +56,8 @@ void Resolution_Init(void)
 		DesktopHeight = info->current_h;
 	} else {
 		/* target 800x600 screen with statusbar out of screen */
-		DesktopWidth = 2*NUM_VISIBLE_LINE_PIXELS;
-		DesktopHeight = 2*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT;
+		DesktopWidth = 1*NUM_VISIBLE_LINE_PIXELS;
+		DesktopHeight = 1*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT;
 		fprintf(stderr, "WARNING: invalid desktop size %dx%d, defaulting to %dx%d!\n",
 			info->current_w, info->current_h, DesktopWidth, DesktopHeight);
 	}
@@ -77,7 +77,7 @@ ConfigureParams.Screen.nMaxHeight = DesktopHeight;
 	DEBUGPRINT(("Desktop resolution: %dx%d\n",DesktopWidth, DesktopHeight));
 	fprintf(stderr, "Configured max Hatari resolution = %dx%d, optimal for ST = %dx%d\n",
 		ConfigureParams.Screen.nMaxWidth, ConfigureParams.Screen.nMaxHeight,
-		2*NUM_VISIBLE_LINE_PIXELS, 2*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT);
+		1*NUM_VISIBLE_LINE_PIXELS, 1*NUM_VISIBLE_LINES+STATUSBAR_MAX_HEIGHT);
 }
 
 /**
