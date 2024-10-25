@@ -611,7 +611,7 @@ static void Screen_SetResolution(void)
  		{
  			Width = 640;
  			Height = 400;
-			nZoom = 2;
+			nZoom = 1;
  		}
 
 		/* Statusbar height for doubled screen size */
