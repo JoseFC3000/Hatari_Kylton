@@ -610,7 +610,7 @@ static void Screen_SetResolution(void)
 		else    /* else use 640x400, also for med-rez */
  		{
  			Width = 640;
- 			Height = 400;
+ 			Height = 200;
 			nZoom = 1;
  		}
 
@@ -621,13 +621,13 @@ static void Screen_SetResolution(void)
 		
 		/* Zoom if necessary, factors used for scaling mouse motions */
 		if (STRes == ST_LOW_RES &&
-		    2*Width <= maxW && 2*Height+SBarHeight <= maxH)
+		    1*Width <= maxW && 1*Height+SBarHeight <= maxH)
 		{
-			nZoom = 2;
+			nZoom = 1;
 			Width *= 1;
 			Height *= 1;
-			nScreenZoomX = 2;
-			nScreenZoomY = 2;
+			nScreenZoomX = 1;
+			nScreenZoomY = 1;
 			bDoubleLowRes = false;
 		}
 		else if (STRes == ST_MEDIUM_RES)
@@ -637,11 +637,11 @@ static void Screen_SetResolution(void)
 			 * skipping that (only leaving doubled lines
 			 * black for the TV mode).
 			 */
-			nZoom = 2;
+			nZoom = 1;
 			Width *= 1;
 			Height *= 1;
-			nScreenZoomX = 2;
-			nScreenZoomY = 2;
+			nScreenZoomX = 1;
+			nScreenZoomY = 1;
 			bDoubleLowRes = false;
  		}
 
