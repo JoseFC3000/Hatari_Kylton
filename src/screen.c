@@ -611,11 +611,11 @@ static void Screen_SetResolution(void)
  		{
  			Width = 640;
  			Height = 200;
-			nZoom = 2;
+			nZoom = 1;
  		}
 
 		/* Statusbar height for doubled screen size */
-		SBarHeight = Statusbar_GetHeightForSize(640, 400);
+		SBarHeight = Statusbar_GetHeightForSize(640, 200);
 
 		Resolution_GetLimits(&maxW, &maxH, &BitCount, ConfigureParams.Screen.bKeepResolutionST);
 		
@@ -638,7 +638,7 @@ static void Screen_SetResolution(void)
 			 * black for the TV mode).
 			 */
 			nScreenZoomX = 1;
-			nScreenZoomY = 2;
+			nScreenZoomY = 1;
  		}
 
 		/* Adjust width/height for overscan borders, if mono or VDI we have no overscan */
