@@ -610,8 +610,8 @@ static void Screen_SetResolution(void)
 		else    /* else use 640x400, also for med-rez */
  		{
  			Width = 640;
- 			Height = 200;
-			nZoom = 1;
+ 			Height = 400;
+			nZoom = 2;
  		}
 
 		/* Statusbar height for doubled screen size */
