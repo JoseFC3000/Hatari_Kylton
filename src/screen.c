@@ -624,11 +624,11 @@ static void Screen_SetResolution(void)
 		    2*Width <= maxW && 2*Height+SBarHeight <= maxH)
 		{
 			nZoom = 2;
-			Width *= 2;
-			Height *= 2;
+			Width *= 1;
+			Height *= 1;
 			nScreenZoomX = 2;
 			nScreenZoomY = 2;
-			bDoubleLowRes = true;
+			bDoubleLowRes = false;
 		}
 		else if (STRes == ST_MEDIUM_RES)
 		{
@@ -637,8 +637,12 @@ static void Screen_SetResolution(void)
 			 * skipping that (only leaving doubled lines
 			 * black for the TV mode).
 			 */
-			nScreenZoomX = 1;
+			nZoom = 2;
+			Width *= 1;
+			Height *= 1;
+			nScreenZoomX = 2;
 			nScreenZoomY = 2;
+			bDoubleLowRes = false;
  		}
 
 		/* Adjust width/height for overscan borders, if mono or VDI we have no overscan */
