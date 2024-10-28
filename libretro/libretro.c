@@ -28,8 +28,8 @@ cothread_t emuThread;
 int CROP_WIDTH;
 int CROP_HEIGHT;
 int VIRTUAL_WIDTH ;
-int retrow=1024; 
-int retroh=1024;
+int retrow=320; 
+int retroh=200;
 
 extern unsigned short int bmp[1024*1024];
 extern int STATUTON, SHOWKEY, SHIFTON, MOUSEMODE, PAS, SND;
