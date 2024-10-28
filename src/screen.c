@@ -620,9 +620,8 @@ static void Screen_SetResolution(void)
 		Resolution_GetLimits(&maxW, &maxH, &BitCount, ConfigureParams.Screen.bKeepResolutionST);
 		
 		/* Zoom if necessary, factors used for scaling mouse motions */
-		/*
 		if (STRes == ST_LOW_RES &&
-		    2*Width <= maxW && 2*Height+SBarHeight <= maxH)
+		    5*Width <= maxW && 5*Height+SBarHeight <= maxH)
 		{
 			nZoom = 2;
 			Width *= 2;
@@ -641,7 +640,6 @@ static void Screen_SetResolution(void)
 			nScreenZoomX = 1;
 			nScreenZoomY = 2;
  		}
-		*/
 
 		/* Adjust width/height for overscan borders, if mono or VDI we have no overscan */
 		if (ConfigureParams.Screen.bAllowOverscan && !bUseHighRes)
