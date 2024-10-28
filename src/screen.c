@@ -609,8 +609,8 @@ static void Screen_SetResolution(void)
  		}
 		else    /* else use 640x400, also for med-rez */
  		{
- 			Width = 320;
- 			Height = 200;
+ 			Width = 640;
+ 			Height = 400;
 			nZoom = 1;
  		}
 
