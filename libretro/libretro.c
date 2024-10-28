@@ -29,7 +29,7 @@ int CROP_WIDTH;
 int CROP_HEIGHT;
 int VIRTUAL_WIDTH ;
 int retrow=320; 
-int retroh=400;
+int retroh=200;
 
 extern unsigned short int bmp[1024*1024];
 extern int STATUTON, SHOWKEY, SHIFTON, MOUSEMODE, PAS, SND;
