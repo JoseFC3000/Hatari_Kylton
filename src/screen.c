@@ -621,8 +621,6 @@ static void Screen_SetResolution(void)
 		
 		/* Zoom if necessary, factors used for scaling mouse motions */
 		if (STRes == ST_LOW_RES &&
-		    1*Width <= maxW && 1*Height+SBarHeight <= maxH)
-		if (STRes == ST_LOW_RES &&
 		    2*Width <= maxW && 2*Height+SBarHeight <= maxH)
 		{
 			nZoom = 2;
