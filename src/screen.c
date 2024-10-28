@@ -639,7 +639,7 @@ static void Screen_SetResolution(void)
 			 */
 			nZoom = 1;
 			Width *= 1;
-			Height *= 1;
+			Height *= 2;
 			nScreenZoomX = 1;
 			nScreenZoomY = 1;
 			bDoubleLowRes = false;
