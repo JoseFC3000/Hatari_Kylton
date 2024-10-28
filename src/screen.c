@@ -621,7 +621,7 @@ static void Screen_SetResolution(void)
 		
 		/* Zoom if necessary, factors used for scaling mouse motions */
 		if (STRes == ST_LOW_RES &&
-		    1*Width <= maxW && 1*Height+SBarHeight <= maxH)
+		    2*Width <= maxW && 2*Height+SBarHeight <= maxH)
 		{
 			nZoom = 1;
 			Width *= 1;
@@ -638,7 +638,7 @@ static void Screen_SetResolution(void)
 			 * black for the TV mode).
 			 */
 			nScreenZoomX = 1;
-			nScreenZoomY = 1;
+			nScreenZoomY = 2;
  		}
 
 		/* Adjust width/height for overscan borders, if mono or VDI we have no overscan */
