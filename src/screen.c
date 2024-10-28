@@ -637,12 +637,12 @@ static void Screen_SetResolution(void)
 			 * skipping that (only leaving doubled lines
 			 * black for the TV mode).
 			 */
-			nZoom = 1;
+			nZoom = 2;
 			Width *= 1;
-			Height *= 2;
+			Height *= 1;
 			nScreenZoomX = 1;
-			nScreenZoomY = 1;
-			bDoubleLowRes = false;
+			nScreenZoomY = 2;
+			bDoubleLowRes = true;
  		}
 
 		/* Adjust width/height for overscan borders, if mono or VDI we have no overscan */
