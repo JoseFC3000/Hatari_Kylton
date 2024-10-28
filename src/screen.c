@@ -625,9 +625,9 @@ static void Screen_SetResolution(void)
 		{
 			nZoom = 2;
 			Width *= 2;
-			Height *= 1;
+			Height *= 2;
 			nScreenZoomX = 2;
-			nScreenZoomY = 2;
+			nScreenZoomY = 1;
 			bDoubleLowRes = true;
 		}
 		else if (STRes == ST_MEDIUM_RES)
