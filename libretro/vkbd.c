@@ -29,7 +29,7 @@ void virtual_kdb(unsigned short int *pixels,int vx,int vy)
    }
 
    DrawBoxBmp(pix,XBASE3+vx*XSIDE,YBASE3+vy*YSIDE, XSIDE,YSIDE, RGB565(31, 0, 31)); //selected
-   Draw_text(pix,XBASE0-2+vx*XSIDE ,YBASE0+YSIDE*vy,RGB565(30,57,0), BKGCOLOR ,1, 1,10,
+   Draw_text(pix,XBASE0-2+vx*XSIDE ,YBASE0+YSIDE*vy,RGB565(30,57,0), BKGCOLOR ,2, 2,20,
          SHIFTON==-1?MVk[(vy*NPLGN)+vx+page].norml:MVk[(vy*NPLGN)+vx+page].shift);	
 }
 
