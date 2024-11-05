@@ -23,7 +23,7 @@ void virtual_kdb(unsigned short int *pixels,int vx,int vy)
       for(y=0;y<NLIGN;y++)  // 5 letters vert.
       {
          DrawBoxBmp(pix,XBASE3+x*XSIDE,YBASE3+y*YSIDE, XSIDE,YSIDE, RGB565(3, 7, 3)); // unselected
-         Draw_text(pix,XBASE0-2+x*XSIDE ,YBASE0+YSIDE*y,coul, BKGCOLOR ,2, 2,20,
+         Draw_text(pix,XBASE0-4+x*XSIDE ,YBASE0-2+YSIDE*y,coul, BKGCOLOR ,2, 2,20,
                SHIFTON==-1?MVk[(y*NPLGN)+x+page].norml:MVk[(y*NPLGN)+x+page].shift);	
       }
    }
